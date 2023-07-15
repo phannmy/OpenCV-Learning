@@ -1,0 +1,38 @@
+fliter: different filter will retain different detail of an image. For example, 
+a high pass filter will ratain tthe smaller detail in an imagine and filter out the larger one
+while a low pass filter will ratains the larger details.
+
+Blurring: is to make something less clear. This can be reducing the detail of an image
+(like using the filter or kernal) or distort the detail. Applying a low pass filter is
+ prerceived as a blurring effect. For examplem A gaussian blur is a filter using the Gaussian kernel
+
+ kernels: can be use to implement a filter on a imagine. It is a small matrix combining with imagine
+ using a mathemetical technique called convolution. A kernel have different sizes, shape and contents,
+ and each verssion produce a different product. A kernel can be thought of as a small image in itself,
+ it favour features of a similar size and shape to the image.
+
+ GaussianBlur(src, dst, ksize, sigmaX):
+ scr is the input(image)
+ dst is the output image
+ ksize is the size of the kernel
+sigmaX is the direction the kernel will go horizontally
+gaussian blurringis the result of blurring an image using a gaussian function. it is widely used effect
+in graphic software, typically to reduce the noise of the image and reduce the detail. It is also used
+as a preprocessing stage before applying our machine learning or deep learning models
+
+cv2.medianblur(src, dst, ksize)
+scr is the input
+dst is the output
+ksize is the size of the kernel
+median blur is a non linear digital filtering technique. It is used to remove noise from an image or 
+signal. it is widelyuse in digital image processing cause, under certain condition, it preserve the 
+while removing the noise. It is one of the best algorithms to remove salt and pepper noise
+
+cv2.bilateral filter(src, dst, d, sigmaColor, SigmaSpace, borderType)
+src is the input
+dst is the output
+d is the variable of a integer representing the diameter of the pixel neiborhood
+sigmaColor is a integerrepresenting the filter sigma in the color space 
+borderType is a interger opject representing the type of the border used
+bilateral filter is a anon linear edge preserving and noise reducing smoothing filter for images.
+It replace the intesity of each pixel with a weighted average of intensity value from nearby pixels.
