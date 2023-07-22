@@ -11,6 +11,12 @@ Blurring: is to make something less clear. This can be reducing the detail of an
  and each verssion produce a different product. A kernel can be thought of as a small image in itself,
  it favour features of a similar size and shape to the image.
 
+ filter 2d blur: filter2D(src, dst, ddepth, kernel)
+ scr is the input
+ dst is the output
+ ddepth: the depth of the output damage
+ kernel the size of the kernel
+
  GaussianBlur(src, dst, ksize, sigmaX):
  scr is the input(image)
  dst is the output image
