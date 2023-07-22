@@ -1,0 +1,9 @@
+image sharpening is to sharpen the image, in this case using filter2D to use a kernel and filter making the image 
+more clear.
+
+We use the numpy to create a kernel for sharpening:
+np.array([[0,-1,0],
+         [-1,5,-1],
+         [0,-1,0]])
+this kernel will reduce the clearance of everything beside it's middle part and enhance it. This make it more clear 
+and sharpen the image.
