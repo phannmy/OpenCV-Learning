@@ -1,0 +1,4 @@
+have it to the file that activate the virtual environments 
+ex:(my own file)
+cd to the file opencv then
+.\py_venv\Scripts\activate
