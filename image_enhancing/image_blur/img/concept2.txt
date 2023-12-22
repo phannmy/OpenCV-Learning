@@ -1,0 +1,10 @@
+to read an image we use 
+a=cv2.imread("file name") instead of file name we can also use file path
+
+to create a gui window for displaying image on screen we use 
+cv2.imshow("file name",a)
+
+to keep the gui window open, we use the code
+cv2.waitkey(0)
+the "0" is used as the ammount of time the gui window will be hold open. It should always be positive 
+number or 0, the number 0 will keep the gui window open until the user closed It

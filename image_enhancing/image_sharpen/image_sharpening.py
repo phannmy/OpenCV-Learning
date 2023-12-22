@@ -10,13 +10,13 @@ kernel2 = np.array([[0,-1,0],
                     [0,-1,0]])
 picture = cv2.imread("picture.jpg")
 cv2.imshow("picture", picture)
-cv2.waitKey()
+cv2.waitKey(0)
 
 #not sure if this is edge detection
 basic_Sharpening = cv2.filter2D(picture, -1, kernel)
 cv2.imshow("basic sharpening", basic_Sharpening)
-cv2.waitKey()
+cv2.waitKey(0)
 
 sharpening = cv2.filter2D(picture,-1,kernel2)
 cv2.imshow("sharpening?", sharpening)
-cv2.waitKey()
+cv2.waitKey(0)
